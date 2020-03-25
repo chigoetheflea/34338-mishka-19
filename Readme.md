@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Якубович](https://up.htmlacademy.ru/adaptive/19/user/34338).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
 
 ---
 
