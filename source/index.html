@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Мишка - магазин милых штучек ручной работы | Каталог товаров</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <header class="page-header">
+    <a class="page-header__logo  logo">
+      <img src="img/mishka-logo-mobile.svg" class="logo-img" alt="Мишка - магазин милых штучек ручной работы" width="86" height="35">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__control" type="button">
+        <svg class="main-nav__control-icon" width="20" height="20"></svg>
+        <span class="visually-hidden">Меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="/catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/order.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--icon">
+            <a href="/search.html">
+              <svg class="main-nav__search" width="18" height="18"></svg>
+              <span class="main-nav__hidden">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__item  main-nav__item--icon">
+            <a href="/cart.html">
+              <svg class="main-nav__cart" width="21" height="18"></svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+  <main class="main-page">
+
+    <section class="main-page__welcome">
+      <h1 class="title  main-page__title  title--large  title--center">Милые штуки ручной работы для дома</h1>
+      <div class="categories  main-page__categories">
+        <a href="/interior.html" class="categories__link  categories__link--interior">Предметы интерьера</a>
+        <a href="/toys.html" class="categories__link  categories__link--toys">Детские игрушки</a>
+      </div>
+    </section>
+
+    <section class="week-product  main-page__week-product">
+      <h2 class="title  week-product__title  title--medium">Вязаные корзинки</h2>
+      <p class="week-product__subtitle">Товар недели</p>
+      <p class="week-product__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
+      <table class="week-product__meta">
+        <tr>
+          <td class="week-product__option">Цвет:</td>
+          <td class="week-product__value">Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <td class="week-product__option">Диаметр:</td>
+          <td class="week-product__value">25 см</td>
+        </tr>
+        <tr>
+          <td class="week-product__option">Высота:</td>
+          <td class="week-product__value">15 см</td>
+        </tr>
+      </table>
+      <img src="img/basket.jpg" class="week-product__thumb" alt="Вязаные корзинки" width="260" height="315">
+      <p class="week-product__price">Цена: 990 руб.</p>
+      <a href="/products/basket.html" class="button  week-product__button  js-modal-buy">Заказать</a>
+    </section>
+
+    <section class="advantages  main-page__advantages">
+      <h2 class="title  advantages__title  title--medium">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img src="img/icon-flower.svg" class="advantages__icon  advantages__icon--flower" alt="Экоматериалы" width="32" height="37">
+          <p class="title  advantages__text  title--small">Экологически чистые материалы</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/icon-money.svg" class="advantages__icon  advantages__icon--money" alt="Отличное соотношение цены и качества" width="47" height="27">
+          <p class="title  advantages__title  title--small">Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/icon-heart.svg" class="advantages__icon  advantages__icon--heart" alt="Для любителей соцсетей" width="34" height="27">
+          <p class="title  advantages__title  title--small">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/icon-knot.svg" class="advantages__icon  advantages__icon--knot" alt="Хэндмейд" width="35" height="35">
+          <p class="title  advantages__title  title--small">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/icon-rocket.svg" class="advantages__icon  advantages__icon--rocket" alt="Отечественное производство" width="55" height="23">
+          <p class="title  advantages__title  title--small">Поддержка отечественного производителя</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/icon-gift.svg" class="advantages__icon  advantages__icon--gift" alt="Станет отличным подарком" width="33" height="32">
+          <p class="title  advantages__title  title--small">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews  main-page__reviews"></section>
+
+    <section class="contacts  main-page__contacts"></section>
+
+  </main>
+
+  <footer class="page-footer">
+    <ul class="social  page-footer__social">
+      <li class="social__item">
+        <a href="https://instagram.com/mishka-store" class="social__link">
+          <svg class="social__icon" width="22" height="21"></svg>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://facebook.com/mishka-store" class="social__link">
+          <svg class="social__icon" width="15" height="28"></svg>
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://twitter.com/mishka-store" class="social__link">
+          <svg class="social__icon" width="23" height="20"></svg>
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Разработано в HTML Academy" aria-label="Разработано в HTML Academy">
+        <svg width="27" height="34"></svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
 </html>
