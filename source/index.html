@@ -53,7 +53,7 @@
     </section>
 
     <section class="week-product  main-page__week-product">
-      <h2 class="title  week-product__title  title--medium">Вязаные корзинки</h2>
+      <h2 class="title  week-product__title  title--big">Вязаные корзинки</h2>
       <p class="week-product__subtitle">Товар недели</p>
       <p class="week-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -78,38 +78,70 @@
     </section>
 
     <section class="advantages  main-page__advantages">
-      <h2 class="title  advantages__title  title--medium">Коротко о нас:</h2>
+      <h2 class="title  advantages__title  title--big">Коротко о нас:</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
           <img src="img/icon-flower.svg" class="advantages__icon  advantages__icon--flower" alt="Экоматериалы" width="32" height="37">
-          <p class="title  advantages__text  title--small">Экологически чистые материалы</p>
+          <p class="text  advantages__text  text--large  text--bold">Экологически чистые материалы</p>
         </li>
         <li class="advantages__item">
           <img src="img/icon-money.svg" class="advantages__icon  advantages__icon--money" alt="Отличное соотношение цены и качества" width="47" height="27">
-          <p class="title  advantages__title  title--small">Скандинавский стиль по российской цене</p>
+          <p class="text  advantages__text  text--large  text--bold">Скандинавский стиль по российской цене</p>
         </li>
         <li class="advantages__item">
           <img src="img/icon-heart.svg" class="advantages__icon  advantages__icon--heart" alt="Для любителей соцсетей" width="34" height="27">
-          <p class="title  advantages__title  title--small">Увеличивает лайки на фотографиях</p>
+          <p class="text  advantages__text  text--large  text--bold">Увеличивает лайки на фотографиях</p>
         </li>
         <li class="advantages__item">
           <img src="img/icon-knot.svg" class="advantages__icon  advantages__icon--knot" alt="Хэндмейд" width="35" height="35">
-          <p class="title  advantages__title  title--small">Связано вручную с любовью и умилением</p>
+          <p class="text  advantages__text  text--large  text--bold">Связано вручную с любовью и умилением</p>
         </li>
         <li class="advantages__item">
           <img src="img/icon-rocket.svg" class="advantages__icon  advantages__icon--rocket" alt="Отечественное производство" width="55" height="23">
-          <p class="title  advantages__title  title--small">Поддержка отечественного производителя</p>
+          <p class="text  advantages__text  text--large  text--bold">Поддержка отечественного производителя</p>
         </li>
         <li class="advantages__item">
           <img src="img/icon-gift.svg" class="advantages__icon  advantages__icon--gift" alt="Станет отличным подарком" width="33" height="32">
-          <p class="title  advantages__title  title--small">Поставляется в подарочной упаковке</p>
+          <p class="text  advantages__text  text--large  text--bold">Поставляется в подарочной упаковке</p>
         </li>
       </ul>
     </section>
 
-    <section class="reviews  main-page__reviews"></section>
+    <section class="reviews  main-page__reviews">
+      <h2 class="title  reviews__title  title--big">Отзывы</h2>
+      <div class="reviews__slider  js-slider">
+        <blockquote class="reviews__slide">
+          <p class="text  reviews__quote  text--medium">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="text  reviews__author  text--large  text--bold">Анастасия Красильникова</cite>
+          <p class="text  reviews__nickname  text--large">@misssssiskras</p>
+        </blockquote>
+      </div>
+      <p class="reviews__controls">
+        <button class="button  reviews__prev" type="button">
+          <svg class="reviews__arrow  js-slide-prev" width="50" height="26"></svg>
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="button  reviews__next" type="button">
+          <svg class="reviews__arrow  js-slide-next" width="50" height="26"></svg>
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
+      </p>
+      <a href="/send-review.html" class="button  reviews__button">Написать</a>
+    </section>
 
-    <section class="contacts  main-page__contacts"></section>
+    <section class="contacts  main-page__contacts">
+      <h2 class="title  contacts__title  title--medium">Контакты</h2>
+      <address class="contacts__addresses">
+        <p class="contacts__type">e-mail:</p>
+        <p class="contacts__address">
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</a>
+        </p>
+        <p class="contacts__type">адрес:</p>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      </address>
+      <div class="contacts__map  js-map"></div>
+      <a href="/feedback.html" class="button  contacts__button">Напишите нам</a>
+    </section>
 
   </main>
 
