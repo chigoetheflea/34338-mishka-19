@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .list-style-none;
+  padding-bottom: 23px;
+
+  border-bottom: 2px solid @gray-2;
+}
+
+.social__item {
+  margin: 0 20px;
+}
+
+.social__link {
+  &:hover,
+  &:focus,
+  &:active {
+    svg {
+      fill: @green-1;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
+  svg {
+    fill: @black;
+  }
+}
