@@ -9,7 +9,7 @@
 
 .main-nav__list {
   .list-style-none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .main-nav__link {
@@ -24,37 +24,38 @@
 
   border-top: 1px solid @gray-2;
 
-    &[href]:hover,
-    &[href]:focus {
-      color: fade(@black, 40%);
-    }
-    &[href]:active {
-      color: fade(@black, 70%);
-    }
-}
-
-.main-nav__link--icon {
-  position: relative;
-  z-index: 100;
-
-  &:hover,
-  &:focus {
-    svg {
-      fill: @green-1;
-    }
-  }
-  &:active {
-    svg {
-      fill: fade(@green-1, 70%);
-    }
+  &[href]:hover,
+  &[href]:focus {
+    color: fade(@black, 40%);
   }
 
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    fill: @black;
+  &[href]:active {
+    color: fade(@black, 70%);
+  }
+
+  &--icon {
+    position: relative;
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: @green-1;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: fade(@green-1, 70%);
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      fill: @black;
+    }
   }
 }
 

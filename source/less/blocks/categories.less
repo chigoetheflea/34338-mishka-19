@@ -11,47 +11,52 @@
 
   background-color: @green-1;
 
-    &:nth-child(2n) {
-      background-color: @green-2;
-    }
+  &::after {
+    position: absolute;
+    top: 50%;
 
-    &:hover,
-    &:focus {
-      &::after {
-        opacity: 0.9;
-      }
-    }
-    &:active {
-      color: rgba(255,255,255,0.3);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
-      &::after {
-        opacity: 0.3;
-      }
+    transform: translateY(-50%);
+    opacity: 0.7;
+    content: "";
+  }
+
+  &--dark {
+    background-color: @green-2;
+  }
+
+  &--interior {
+    &::after {
+      width: 40px;
+      height: 62px;
+      right: 35px;
+      background-image: url("../img/icon-interior.svg");
     }
+  }
+
+  &--toys {
+    &::after {
+      width: 60px;
+      height: 60px;
+      right: 27px;
+      background: url("../img/icon-toy.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.9;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
 
     &::after {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      opacity: 0.7;
-      content: "";
+      opacity: 0.3;
     }
-}
-
-.categories__link--interior {
-  &::after {
-    width: 40px;
-    height: 62px;
-    right: 35px;
-    background: url("../../img/icon-interior.svg") 50% 50% no-repeat;
-  }
-}
-
-.categories__link--toys {
-  &::after {
-    width: 60px;
-    height: 60px;
-    right: 27px;
-    background: url("../../img/icon-toy.svg") 50% 50% no-repeat;
   }
 }
