@@ -1,0 +1,62 @@
+.production__title {
+  display: flex;
+  align-items: center;
+  padding: 28px 32px;
+  line-height: 24px;
+
+  svg {
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+}
+
+.production__title,
+.production__info {
+  border: 1px solid @gray-1;
+}
+
+.production__info {
+  padding: 28px 33px 32px 33px;
+  border-top: none;
+}
+
+.production__text {
+  margin: 0;
+}
+
+.production__video {
+  position: relative;
+
+  video {
+    display: block;
+  }
+}
+
+.production__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 101px;
+  height: 77px;
+
+  background: url("../img/icon-play.svg") 50% 50%;
+
+  border: none;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2, 1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.8, 0.8);
+  }
+}
+
+.production__button {
+  margin-top: 30px;
+}
