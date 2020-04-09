@@ -1,5 +1,61 @@
 .contacts__addresses {
+  margin-top: 30px;
+
+  font-style: normal;
+  font-size: @medium;
+  line-height: 30px;
+
   p {
     margin: 0;
   }
+}
+
+.contacts__address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contacts__type {
+  flex-basis: 77px;
+}
+
+.contacts__value {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.contacts__email {
+  position: relative;
+  color: @black;
+
+  &::after {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: @green-1;
+
+    content: "";
+  }
+}
+
+.contacts__map {
+  margin: 40px -30px 0 -30px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.contacts__button {
+  margin-top: 30px;
 }

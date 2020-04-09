@@ -1,3 +1,72 @@
 .reviews__slider {
   margin-top: 30px;
 }
+
+.reviews__slide {
+  margin: 0;
+}
+
+.reviews__quote {
+  margin: 0;
+  line-height: 30px;
+}
+
+.reviews__author {
+  display: block;
+  margin-top: 28px;
+  font-style: normal;
+}
+
+.reviews__nickname {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.reviews__controls {
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+
+  display: flex;
+  border: 1px solid @gray-1;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+    background-color: @gray-1;
+    content: "";
+  }
+}
+
+.reviews__control {
+  flex-basis: 50%;
+  height: 50px;
+  padding: 0;
+
+  background: url("../../img/icon-left-arrow.svg") 50% 50% no-repeat;
+  background-size: auto 26px;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.reviews__control--flip {
+  transform: rotate(180deg);
+}
+
+.reviews__button {
+  margin-top: 38px;
+}

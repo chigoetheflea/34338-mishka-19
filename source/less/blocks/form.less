@@ -1,0 +1,177 @@
+.form__legend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  color: @green-1;
+  font-size: @big;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::after {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    height: 1px;
+    margin-left: 20px;
+
+    background-color: @green-1;
+
+    content: "";
+  }
+
+  &--nomargin {
+    margin-bottom: 0;
+  }
+}
+
+.form__choose {
+  display: block;
+  margin-top: 22px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.form__label {
+  font-size: @big;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__handle {
+  position: relative;
+
+  display: block;
+  min-height: 40px;
+  padding-left: 60px;
+  padding-top: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @black;
+  }
+
+  &::after {
+    opacity: 0;
+  }
+
+  &--radio {
+    &::before,
+    &::after {
+      border-radius: 50%;
+    }
+
+    &::after {
+      top: 12px;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      background-color: @green-1;
+    }
+  }
+
+  &--checkbox {
+    &::after {
+      top: 12px;
+      left: 9px;
+
+      width: 22px;
+      height: 16px;
+
+      background: url("../img/icon-tick.svg") 50% 50%;
+      background-size: 22px 16px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: @green-1;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: fade(@black, 30%);
+    }
+  }
+}
+
+.form__hidden:checked + .form__handle {
+  &::after {
+    opacity: 1;
+  }
+}
+
+.form__group {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.form__textgroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+
+  &--first {
+    margin-top: 0;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+  opacity: 0.2;
+  pointer-events: none;
+
+  &--phone {
+    right: 3px;
+  }
+}
+
+.form__input {
+  padding-right: 40px;
+}
+
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon,
+.form__input:active + .form__icon {
+  opacity: 1;
+}
+
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon {
+  fill: @green-1;
+}
+
+.form__textarea {
+  height: 138px;
+}
+
+.form__notice {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  margin-top: 30px;
+}
