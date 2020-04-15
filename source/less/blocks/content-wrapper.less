@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
-  max-width: @desktop-width;
+  max-width: @mobile-width;
 
   &--center {
     align-items: center;
@@ -21,7 +21,14 @@
 
 @media (min-width: @tablet-width) {
   .content-wrapper {
+    max-width: @tablet-width;
     padding-right: 50px;
     padding-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-wrapper {
+    max-width: @desktop-width;
   }
 }
