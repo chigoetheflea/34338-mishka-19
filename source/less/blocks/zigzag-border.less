@@ -1,0 +1,29 @@
+@media (min-width: @tablet-width) {
+  .zigzag-border {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat-x;
+      background-size: auto 100%;
+
+      pointer-events: none;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .zigzag-border {
+    &::after {
+      bottom: -19px;
+      height: 34px;
+    }
+  }
+}

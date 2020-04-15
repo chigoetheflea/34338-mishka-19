@@ -4,25 +4,21 @@
   margin-bottom: 30px;
 
   color: @green-1;
-  font-size: @big;
+  font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
-
-  &::after {
-    flex-basis: 0;
-    flex-grow: 1;
-
-    height: 1px;
-    margin-left: 20px;
-
-    background-color: @green-1;
-
-    content: "";
-  }
 
   &--nomargin {
     margin-bottom: 0;
   }
+}
+
+.form__line {
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 1px;
+  margin-left: 20px;
+  background-color: @green-1;
 }
 
 .form__choose {
@@ -35,7 +31,7 @@
 }
 
 .form__label {
-  font-size: @big;
+  font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 }

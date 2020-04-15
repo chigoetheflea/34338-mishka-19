@@ -1,10 +1,10 @@
 .text {
   &--medium {
-    font-size: @medium;
+    font-size: 15px;
   }
 
   &--large {
-    font-size: @big;
+    font-size: 17px;
   }
 
   &--bold {
@@ -13,5 +13,17 @@
 
   &--nomargin {
     margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text {
+    &--medium {
+      font-size: 17px;
+    }
+
+    &--large {
+      font-size: 20px;
+    }
   }
 }

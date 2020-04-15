@@ -1,8 +1,22 @@
 .zigzag {
   height: 6px;
-  margin: 0 auto;
+  margin: 0 -30px;
   max-width: 1050px;
 
   background: url("../img/bg-zigzag-line.svg") 50% 50% repeat-x;
   background-size: auto 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .zigzag {
+    height: 15px;
+    margin: 0 -50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .zigzag {
+    height: 23px;
+    margin: 0;
+  }
 }
