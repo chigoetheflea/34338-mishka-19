@@ -2,7 +2,7 @@
   position: relative;
 
   display: block;
-  padding: 29px 50% 33px 29px;
+  padding: 29px 33px 33px 29px;
 
   color: #ffffff;
   font-size: 19px;
@@ -58,5 +58,17 @@
     &::after {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .categories {
+    display: flex;
+  }
+
+  .categories__link {
+    flex-basis: 50%;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

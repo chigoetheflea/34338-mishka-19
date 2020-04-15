@@ -1,0 +1,27 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: @desktop-width;
+
+  &--center {
+    align-items: center;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .content-wrapper {
+    &--nopadding {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .content-wrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}

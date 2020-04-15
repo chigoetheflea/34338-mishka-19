@@ -1,6 +1,7 @@
 .title {
   margin: 0;
   font-weight: bold;
+  line-height: 1;
 
   &--large {
     font-size: 27px;
@@ -20,5 +21,41 @@
 
   &--center {
     text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    &--large {
+      font-size: 43px;
+    }
+
+    &--big {
+      font-size: 43px;
+    }
+
+    &--medium {
+      font-size: 43px;
+    }
+
+    &--small {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title {
+    &--large {
+      font-size: 53px;
+    }
+
+    &--big {
+      font-size: 53px;
+    }
+
+    &--medium {
+      font-size: 53px;
+    }
   }
 }
