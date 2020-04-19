@@ -1,3 +1,10 @@
+.production__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid @gray-1;
+}
+
 .production__title {
   display: flex;
   align-items: center;
@@ -10,25 +17,36 @@
   }
 }
 
-.production__title,
-.production__info {
-  border: 1px solid @gray-1;
-}
-
 .production__info {
   padding: 28px 33px 32px 33px;
-  border-top: none;
 }
 
 .production__text {
   margin: 0;
 }
 
+.production__poster {
+  position: relative;
+  z-index: 0;
+
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .production__video {
   position: relative;
+  margin: 0 -1px;
 
   video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
     display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -36,6 +54,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
 
   width: 101px;
   height: 77px;
@@ -59,4 +78,83 @@
 
 .production__button {
   margin-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .production__title {
+    order: 1;
+    padding: 38px 41px 37px 41px;
+
+    svg {
+      margin-right: 30px;
+    }
+  }
+
+  .production__info {
+    order: 2;
+    padding: 0 41px 45px 41px;
+  }
+
+  .production__button {
+    margin-top: 40px;
+  }
+
+  .production__text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .production__wrapper {
+    position: static;
+    width: 35%;
+    min-height: 455px;
+  }
+
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%; /* Пока что, т.к. нет других картинок */
+    margin: 0;
+  }
+
+  .production__poster {
+    height: 100%; /* Пока что, т.к. нет других картинок */
+  }
+
+  .production__title,
+  .production__info {
+    padding-left: 80px;
+  }
+
+  .production__info {
+    padding-top: 0;
+    padding-right: 56px;
+    padding-bottom: 59px;
+  }
+
+  .production__title {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 60px;
+    padding-bottom: 40px;
+
+    svg {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .production__button {
+    margin-top: 45px;
+  }
 }

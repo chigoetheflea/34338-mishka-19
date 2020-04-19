@@ -110,11 +110,13 @@
   }
 }
 
-.form__group {
+.form__group-wrapper {
   margin-top: 30px;
+}
 
-  &:first-child {
-    margin-top: 0;
+.form__group {
+  &--margin-top {
+    margin-top: 30px;
   }
 }
 
@@ -164,10 +166,179 @@
 
 .form__notice {
   margin-top: 15px;
+  margin-bottom: 0;
+  color: @gray-4;
   font-size: 14px;
   line-height: 16px;
 }
 
 .form__button {
   margin-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__group-wrapper {
+    margin-top: 0;
+
+    &--dark {
+      background-color: @gray-1;
+    }
+  }
+
+  .form__group {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &--margin-top {
+      margin-top: 15px;
+    }
+
+    &--nopadding-bottom {
+      padding-bottom: 0;
+    }
+
+    &--nopadding-top {
+      padding-top: 0;
+    }
+  }
+
+  .form__column {
+    flex-basis: 75%;
+    align-items: flex-start;
+
+    &--first {
+      flex-basis: 25%;
+    }
+
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      margin-top: -24px;
+
+      .form__choose {
+        flex-basis: 50%;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .form__legend {
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+
+  .form__line {
+    display: none;
+  }
+
+  .form__handle {
+    min-height: 52px;
+    padding-left: 80px;
+    padding-top: 16px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+    }
+
+    &--radio {
+      &::before {
+        width: 52px;
+      }
+
+      &::after {
+        top: 15px;
+        left: 15px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--checkbox {
+      &::after {
+        top: 16px;
+        left: 10px;
+        width: 34px;
+        height: 23px;
+        background-size: 34px 23px;
+      }
+    }
+  }
+
+  .form__choose {
+    margin-top: 25px;
+  }
+
+  .form__label {
+    font-size: 19px;
+
+    &--margin-right {
+      margin-right: 20px;
+    }
+  }
+
+  .form__textgroup {
+    flex-direction: row;
+    align-items: center;
+
+    &--nomargin-top {
+      margin-top: 0;
+    }
+  }
+
+  .form__control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__notice {
+    order: 1;
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__button {
+    margin: 0;
+  }
+
+  .form__icon {
+    right: 22px;
+
+    &--phone {
+      right: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__column {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    &--first {
+      flex-basis: @desktop-block-padding - 60; /* Из-за IE */
+      flex-grow: 0;
+      margin-left: 60px;
+    }
+
+    &--flex {
+      .form__choose {
+        flex-basis: 262px;
+      }
+    }
+
+    &--padding-right {
+      padding-right: @desktop-block-padding;
+    }
+  }
+
+  .form__control {
+    padding-right: @desktop-block-padding + 50;
+    padding-left: @desktop-block-padding + 50;
+  }
 }
