@@ -108,7 +108,7 @@
         </div>
       </section>
 
-      <div class="zigzag"></div>
+      <div class="zigzag  zigzag--in-wrapper"></div>
 
       <section class="section  advantages  main-page__advantages">
         <h2 class="title  advantages__title  title--big">Коротко о нас:</h2>
@@ -152,49 +152,55 @@
         </ul>
       </section>
 
-      <section class="section  reviews  main-page__reviews">
+    </div>
+
+      <section class="section  content-wrapper  reviews  main-page__reviews">
         <h2 class="title  reviews__title  title--big">Отзывы</h2>
         <div class="reviews__slider  js-slider">
           <blockquote class="reviews__slide">
             <p class="text  reviews__quote  text--medium">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="text  reviews__author  text--large  text--bold">Анастасия Красильникова</cite>
-            <p class="text  reviews__nickname  text--large">@misssssiskras</p>
+            <cite class="reviews__author">Анастасия Красильникова</cite>
+            <p class="reviews__nickname">@misssssiskras</p>
           </blockquote>
         </div>
-        <p class="reviews__controls">
-          <button class="reviews__control  js-slide-prev" type="button">
-            <span class="visually-hidden">Предыдущий отзыв</span>
-          </button>
-          <button class="reviews__control  js-slide-next  reviews__control--flip" type="button">
-            <span class="visually-hidden">Следующий отзыв</span>
-          </button>
-        </p>
-        <a href="/send-review.html" class="button  reviews__button">Написать</a>
+        <div class="reviews__controls-wrapper">
+          <p class="reviews__controls">
+            <button class="reviews__control  js-slide-prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__control  js-slide-next  reviews__control--flip" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </p>
+          <a href="/send-review.html" class="button  reviews__button">Написать</a>
+        </div>
       </section>
 
       <div class="zigzag"></div>
 
       <section class="section  contacts  main-page__contacts">
-        <h2 class="title  contacts__title  title--medium">Контакты</h2>
-        <address class="contacts__addresses">
-          <div class="contacts__address">
-            <p class="contacts__type">e-mail:</p>
-            <p class="contacts__value">
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</a>
-            </p>
+        <div class="content-wrapper">
+          <div class="contacts__wrapper">
+            <h2 class="title  contacts__title  title--medium">Контакты</h2>
+            <address class="contacts__addresses">
+              <div class="contacts__address">
+                <p class="contacts__type">e-mail:</p>
+                <p class="contacts__value">
+                  <a href="mailto:info@mimimishkashop.ru" class="contacts__email">info@mimimishkashop.ru</a>
+                </p>
+              </div>
+              <div class="contacts__address">
+                <p class="contacts__type">адрес:</p>
+                <p class="contacts__value">г.&nbsp;Санкт-Петербург,<br>ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8, офис&nbsp;101</p>
+              </div>
+            </address>
           </div>
-          <div class="contacts__address">
-            <p class="contacts__type">адрес:</p>
-            <p class="contacts__value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</p>
+          <div class="contacts__map  js-map">
+            <img src="img/map-mobile@1x.jpg" alt="Наш магазин расположен по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
           </div>
-        </address>
-        <div class="contacts__map  js-map">
-          <img src="img/map-mobile@1x.jpg" alt="Наш магазин расположен по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+          <a href="/feedback.html" class="button  contacts__button  button--medium">Напишите нам</a>
         </div>
-        <a href="/feedback.html" class="button  contacts__button">Напишите нам</a>
       </section>
-
-    </div>
 
   </main>
 

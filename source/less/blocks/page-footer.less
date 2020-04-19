@@ -49,11 +49,16 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    margin-top: 57px;
     padding-top: 50px;
     padding-bottom: 50px;
 
-    &--inner {
-      margin-top: 65px;
+    &--order {
+      margin-top: 50px;
+    }
+
+    &--catalog {
+      margin-top: 63px;
     }
   }
 
@@ -75,5 +80,15 @@
 
   .page-footer__column {
     flex-basis: 33.33%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    margin-top: 105px;
+
+    &--order {
+      margin-top: 50px;
+    }
   }
 }
