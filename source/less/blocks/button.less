@@ -10,6 +10,7 @@
   text-transform: uppercase;
   color: @gray-4;
   line-height: 16px;
+  letter-spacing: 0.5px;
 
   background-color: #ffffff;
 
@@ -25,6 +26,30 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: @gray-4;
+  }
+
+  &--green {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: #ffffff;
+    background-color: @green-1;
+    border:none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @green-2;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &:disabled {
+    color: @gray-3;
+    background-color: @gray-6;
+    cursor: default;
   }
 }
 

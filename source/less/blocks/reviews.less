@@ -3,7 +3,7 @@
 }
 
 .reviews__slider {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .reviews__slide {
@@ -17,17 +17,18 @@
 
 .reviews__author {
   display: block;
-  margin-top: 28px;
+  margin-top: 26px;
 
   font-style: normal;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 .reviews__nickname {
   margin: 0;
-  margin-top: 6px;
+  margin-top: 3px;
   font-size: 17px;
   line-height: 30px;
 }
@@ -84,20 +85,24 @@
 @media (min-width: @tablet-width) {
   .reviews {
     position: relative;
-    padding-top: 80px;
+    padding-top: 84px;
     padding-bottom: 50px;
     background: url("../img/review@1x.jpg") 0 0 no-repeat;
     background-size: auto 100%;
   }
 
+  .reviews__title {
+    margin-left: -5px;
+  }
+
   .reviews__author {
-    margin-top: 60px;
+    margin-top: 59px;
     font-size: 18px;
     line-height: 24px;
   }
 
   .reviews__slider {
-    margin-top: 60px;
+    margin-top: 51px;
   }
 
   .reviews__controls-wrapper {
@@ -109,7 +114,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 80px 0 50px 0;
+    padding: 83px 0 53px 0;
 
     pointer-events: none;
   }
@@ -136,13 +141,19 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
+    margin-top: 19px;
+    padding-top: 71px;
     padding-left: @desktop-block-padding + 50;
     padding-bottom: 95px;
     background-position: 50px 50%;
   }
 
   .reviews__author {
-    margin-top: 45px;
+    margin-top: 39px;
     font-size: 17px;
+  }
+
+  .reviews__controls-wrapper {
+    padding: 79px 0 98px 0;
   }
 }
