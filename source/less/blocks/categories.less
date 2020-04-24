@@ -2,12 +2,12 @@
   position: relative;
 
   display: block;
-  padding: 29px 33px 33px 29px;
+  padding: 27px 33px 32px 29px;
 
   color: #ffffff;
   font-size: 19px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 22px;
 
   background-color: @green-1;
 
@@ -68,7 +68,14 @@
 
   .categories__link {
     flex-basis: 50%;
+    padding-left: 36px;
     font-size: 20px;
     line-height: 30px;
+
+    &--toys {
+      &::after {
+        right: 34px;
+      }
+    }
   }
 }
