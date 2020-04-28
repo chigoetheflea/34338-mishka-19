@@ -85,10 +85,18 @@
 @media (min-width: @tablet-width) {
   .reviews {
     position: relative;
+
     padding-top: 84px;
     padding-bottom: 50px;
-    background: url("../img/review@1x.jpg") 0 0 no-repeat;
+
+    background-image: url("../img/review@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
     background-size: auto 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {

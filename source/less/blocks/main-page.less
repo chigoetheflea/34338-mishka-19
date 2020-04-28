@@ -1,6 +1,15 @@
 .main-page__welcome {
   padding-top: 70px;
-  background: @gray-5 url("../img/hero-mobile@1x.jpg") 50% -20px no-repeat;
+
+  background-color: @gray-5;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% -20px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .main-page__title {
@@ -25,8 +34,14 @@
 @media (min-width: @tablet-width) {
   .main-page__welcome {
     padding-top: 91px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-size: auto 108%;
     background-position: 50% -57px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .main-page__title {
@@ -50,12 +65,18 @@
 @media (min-width: @desktop-width) {
   .main-page__welcome {
     padding-top: 153px;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-size: auto 100%;
     background-position: 50% 0;
 
     &::after {
       bottom: -20px;
       height: 37px;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 
