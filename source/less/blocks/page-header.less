@@ -6,10 +6,9 @@
 
 .page-header__logo {
   position: absolute;
-  top: 22px;
+  top: 4px;
   left: 50%;
   z-index: 1;
-
   transform: translateX(-50%);
 
   &[href]:hover,
@@ -22,20 +21,28 @@
   }
 }
 
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     border-bottom: none;
   }
 
   .page-header__logo {
-    top: 22px;
-    left: 50px;
+    top: 8px;
+    left: 31px;
     transform: translateX(0);
+  }
 
-    img {
-      width: 113px;
-      height: 46px;
-    }
+  .page-header__logo-tablet {
+    display: block;
+  }
+
+  .page-header__logo-mobile {
+    display: none;
   }
 }
 
@@ -44,10 +51,13 @@
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
+  }
 
-    img {
-      width: 149px;
-      height: 72px;
-    }
+  .page-header__logo-desktop {
+    display: block;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
   }
 }
