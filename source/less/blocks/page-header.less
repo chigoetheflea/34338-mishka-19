@@ -6,7 +6,7 @@
 
 .page-header__logo {
   position: absolute;
-  top: 4px;
+  top: 21px;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -21,28 +21,19 @@
   }
 }
 
-.page-header__logo-tablet,
-.page-header__logo-desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .page-header {
     border-bottom: none;
   }
 
   .page-header__logo {
-    top: 8px;
-    left: 31px;
+    left: 50px;
     transform: translateX(0);
-  }
 
-  .page-header__logo-tablet {
-    display: block;
-  }
-
-  .page-header__logo-mobile {
-    display: none;
+    img {
+      width: 113px;
+      height: 46px;
+    }
   }
 }
 
@@ -51,13 +42,10 @@
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
-  }
 
-  .page-header__logo-desktop {
-    display: block;
-  }
-
-  .page-header__logo-tablet {
-    display: none;
+    img {
+      width: 149px;
+      height: 72px;
+    }
   }
 }
