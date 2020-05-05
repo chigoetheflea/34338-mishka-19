@@ -18,13 +18,11 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__control" type="button">
-        <svg class="main-nav__control-icon" width="20.514px" height="20.512px">
-          <use xlink:href="img/sprite.svg#icon-close" aria-hidden="true" focusable="false"></use>
-        </svg>
+        <div class="main-nav__burger"></div>
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list  main-nav__list--pages  main-nav__list--lightgray">
+        <ul class="main-nav__list  main-nav__list--pages  main-nav__list--darkgray">
           <li class="main-nav__item">
             <a class="main-nav__link">Каталог товаров</a>
           </li>
@@ -242,6 +240,30 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <section class="modal__window">
+      <h2 class="title  modal__title">Добавить в&nbsp;корзину</h2>
+      <p class="text  modal__descriptor  text--medium">Выберите размер:</p>
+      <form class="form  modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form__sizes">
+          <label class="form__size-wrapper">
+            <input type="checkbox" name="modal-size-s" value="S" class="visually-hidden  form__hidden" checked>
+            <span class="form__size">S</span>
+          </label>
+          <label class="form__size-wrapper">
+            <input type="checkbox" name="modal-size-m" value="M" class="visually-hidden  form__hidden">
+            <span class="form__size">M</span>
+          </label>
+          <label class="form__size-wrapper">
+            <input type="checkbox" name="modal-size-l" value="L" class="visually-hidden  form__hidden">
+            <span class="form__size">L</span>
+          </label>
+        </div>
+        <button type="submit" class="button  modal__button  button--green">Добавить</button>
+      </form>
+    </section>
+  </div>
 
   <script src="/js/svg4everybody.legacy.min.js"></script>
   <script src="/js/picturefill.min.js"></script>

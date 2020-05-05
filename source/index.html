@@ -18,9 +18,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__control" type="button">
-        <svg class="main-nav__control-icon" width="20.514px" height="20.512px">
-          <use xlink:href="img/sprite.svg#icon-close" aria-hidden="true" focusable="false"></use>
-        </svg>
+        <div class="main-nav__burger"></div>
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -219,7 +217,8 @@
               </div>
             </address>
           </div>
-          <div class="contacts__map  js-map">
+          <div class="contacts__map">
+            <div class="contacts__interactive" id="js-map"></div>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -239,7 +238,7 @@
   <footer class="page-footer">
     <div class="content-wrapper  page-footer__wrapper">
       <div class="page-footer__column">
-        <a href="index.html" class="logo  page-footer__logo" aria-label="Мишка – магазин милых штучек ручной работы">
+        <a class="logo  page-footer__logo" aria-label="Мишка – магазин милых штучек ручной работы">
           <svg width="102px" height="34px" focusable="false">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
@@ -306,6 +305,7 @@
     </section>
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="/js/svg4everybody.legacy.min.js"></script>
   <script src="/js/picturefill.min.js"></script>
   <script src="/js/mishka.js"></script>
