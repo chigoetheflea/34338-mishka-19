@@ -44,6 +44,7 @@
   }
 
   svg {
+    .transition(svg);
     display: inline-block;
     margin-left: 24px;
     fill: @green-1;
@@ -74,7 +75,17 @@
   }
 
   .page-footer__logo {
+    .transition();
     display: block;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__copyright {

@@ -1,10 +1,92 @@
+.main-nav__wrapper {
+  height: auto;
+  overflow: hidden;
+}
+
 .main-nav {
   position: relative;
   padding-top: 79px;
+
+  &--closed {
+    .main-nav__wrapper {
+      height: 0;
+    }
+
+    .main-nav__list {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+
+    .main-nav__burger {
+      background: linear-gradient(to bottom, #ffffff, #ffffff 45%, #000000 45%, #000000 55%, #ffffff 55%);
+
+      &::before,
+      &::after {
+        width: 100%;
+        transform: rotate(0deg);
+      }
+
+      &::before {
+        margin-top: -7px;
+      }
+
+      &::after {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+
+.main-nav__control {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.main-nav__burger {
+  position: relative;
+  height: 100%;
+
+  &::before,
+  &::after {
+    .transition();
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 100%;
+
+    height: 2px;
+    background-color: @black;
+
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
   .list-style-none;
+  .transition();
+  opacity: 1;
+  transform: translateY(0);
 
   &--add {
     display: none;
@@ -50,11 +132,15 @@
     }
 
     svg {
+      .transition(svg);
+
       position: absolute;
       top: 50%;
       left: 30px;
-      transform: translateY(-50%);
+
       fill: fade(@black, 20%);
+
+      transform: translateY(-50%);
     }
   }
 
@@ -63,19 +149,21 @@
   }
 }
 
-.main-nav__control {
-  position: absolute;
-  top: 29px;
-  right: 30px;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 @media (min-width: @tablet-width) {
   .main-nav {
     padding-top: 0;
+
+    &--closed {
+      .main-nav__wrapper {
+        height: auto;
+      }
+
+      .main-nav__list {
+        opacity: 1;
+        transform: translateY(0);
+        transition: none;
+      }
+    }
   }
 
   .main-nav__control {
@@ -86,6 +174,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    overflow: visible;
   }
 
   .main-nav__list {
@@ -122,6 +211,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      z-index: 1;
     }
 
     &--add,
