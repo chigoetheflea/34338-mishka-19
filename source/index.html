@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <title>Мишка – магазин милых штучек ручной работы</title>
 </head>
 <body>
+
+  <div style="display:none;">
+    <include src="source/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <a class="logo  page-header__logo">
@@ -34,7 +41,7 @@
           <li class="main-nav__item">
             <a href="/search.html" class="main-nav__link  main-nav__link--icon">
               <svg width="17.6px" height="17.6px" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               <span class="main-nav__hidden">Поиск по сайту</span>
             </a>
@@ -42,7 +49,7 @@
           <li class="main-nav__item">
             <a href="/cart.html" class="main-nav__link  main-nav__link--icon">
               <svg width="20.294px" height="18.849px" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста
             </a>
@@ -126,7 +133,7 @@
           <li class="advantages__item  advantages__item--flower">
             <div class="advantages__icon-wrapper">
               <svg width="32px" height="37px" class="advantages__icon  advantages__icon--flower" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
+                <use xlink:href="#icon-feature-flower"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Экологически<br>чистые материалы</p>
@@ -134,7 +141,7 @@
           <li class="advantages__item  advantages__item--money">
             <div class="advantages__icon-wrapper">
               <svg width="47px" height="27px" class="advantages__icon  advantages__icon--money" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-money"></use>
+                <use xlink:href="#icon-feature-money"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Скандинавский стиль<br>по&nbsp;российской цене</p>
@@ -142,7 +149,7 @@
           <li class="advantages__item  advantages__item--heart">
             <div class="advantages__icon-wrapper">
               <svg width="34px" height="27px" class="advantages__icon  advantages__icon--heart" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
+                <use xlink:href="#icon-feature-heart"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Увеличивает лайки<br>на&nbsp;фотографиях</p>
@@ -150,7 +157,7 @@
           <li class="advantages__item  advantages__item--knot">
             <div class="advantages__icon-wrapper">
               <svg width="35px" height="35px" class="advantages__icon  advantages__icon--knot" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
+                <use xlink:href="#icon-feature-ball"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Связано вручную<br>с&nbsp;любовью и&nbsp;умилением</p>
@@ -158,7 +165,7 @@
           <li class="advantages__item  advantages__item--rocket">
             <div class="advantages__icon-wrapper">
               <svg width="55px" height="23px" class="advantages__icon  advantages__icon--rocket" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
+                <use xlink:href="#icon-feature-rocket"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Поддержка отечественного<br>производителя</p>
@@ -166,7 +173,7 @@
           <li class="advantages__item  advantages__item--gift">
             <div class="advantages__icon-wrapper">
               <svg width="33px" height="32px" class="advantages__icon  advantages__icon--gift" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
+                <use xlink:href="#icon-feature-gift"></use>
               </svg>
             </div>
             <p class="text  advantages__text  text--large  text--bold">Поставляется<br>в&nbsp;подарочной упаковке</p>
@@ -240,7 +247,7 @@
       <div class="page-footer__column">
         <a class="logo  page-footer__logo" aria-label="Мишка – магазин милых штучек ручной работы">
           <svg width="102px" height="34px" focusable="false">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
+            <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
       </div>
@@ -248,7 +255,7 @@
         <li class="social__item">
           <a href="https://instagram.com/mishka-store" class="social__link" aria-label="Мишка в Instagram">
             <svg width="21.769px" height="21.334px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
@@ -256,7 +263,7 @@
         <li class="social__item">
           <a href="https://facebook.com/mishka-store" class="social__link" aria-label="Мишка в Facebook">
             <svg width="14.962px" height="27.718px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -264,7 +271,7 @@
         <li class="social__item">
           <a href="https://twitter.com/mishka-store" class="social__link" aria-label="Мишка в Twitter">
             <svg width="23.5px" height="20px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
             <span class="visually-hidden">Twitter</span>
           </a>
@@ -274,7 +281,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer" target="_blank" aria-label="Разработано в HTML Academy">
           Разработано
           <svg width="27px" height="34px" focusable="false">
-            <use xlink:href="img/sprite.svg#logo-htmla"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -306,9 +313,8 @@
   </div>
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="/js/svg4everybody.legacy.min.js"></script>
   <script src="/js/picturefill.min.js"></script>
-  <script src="/js/mishka.js"></script>
+  <script src="/js/mishka.min.js"></script>
 
 </body>
 </html>

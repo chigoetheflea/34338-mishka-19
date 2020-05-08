@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <title>Мишка - магазин милых штучек ручной работы | Каталог товаров</title>
 </head>
 <body>
+
+  <div style="display:none;">
+    <include src="source/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <a href="/index.html" class="logo  page-header__logo">
@@ -34,7 +41,7 @@
           <li class="main-nav__item">
             <a href="/search.html" class="main-nav__link  main-nav__link--icon">
               <svg width="17.6px" height="17.6px" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               <span class="main-nav__hidden">Поиск по сайту</span>
             </a>
@@ -42,7 +49,7 @@
           <li class="main-nav__item">
             <a href="/cart.html" class="main-nav__link  main-nav__link--icon">
               <svg width="20.294px" height="18.849px" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста
             </a>
@@ -94,7 +101,7 @@
               1 200 руб.
               <a href="/products/banny.html" class="product__buy  js-modal-buy" aria-label="Купить зайчика-попрыгайчика">
                 <svg width="20.294px" height="18.849px" role="button">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </p>
@@ -122,7 +129,7 @@
               690 руб.
               <a href="/products/basket.html" class="product__buy  js-modal-buy" aria-label="Купить корзинку для белья">
                 <svg width="20.294px" height="18.849px" role="button">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </p>
@@ -150,7 +157,7 @@
               1 500 руб.
               <a href="/products/big-basket.html" class="product__buy  js-modal-buy" aria-label="Купить большую корзинку для игрушек">
                 <svg width="20.294px" height="18.849px" role="button">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </p>
@@ -163,7 +170,7 @@
         <div class="production__wrapper">
           <h2 class="title  production__title  title--small">
             <svg width="32px" height="22px" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-video"></use>
+              <use xlink:href="#icon-video"></use>
             </svg>
             Процесс <br>производства
           </h2>
@@ -200,7 +207,7 @@
       <div class="page-footer__column">
         <a href="index.html" class="logo  page-footer__logo" aria-label="Мишка – магазин милых штучек ручной работы">
           <svg width="102px" height="34px" focusable="false">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
+            <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
       </div>
@@ -208,7 +215,7 @@
         <li class="social__item">
           <a href="https://instagram.com/mishka-store" class="social__link" aria-label="Мишка в Instagram">
             <svg width="21.769px" height="21.334px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
@@ -216,7 +223,7 @@
         <li class="social__item">
           <a href="https://facebook.com/mishka-store" class="social__link" aria-label="Мишка в Facebook">
             <svg width="14.962px" height="27.718px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -224,7 +231,7 @@
         <li class="social__item">
           <a href="https://twitter.com/mishka-store" class="social__link" aria-label="Мишка в Twitter">
             <svg width="23.5px" height="20px" focusable="false">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
             <span class="visually-hidden">Twitter</span>
           </a>
@@ -234,7 +241,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer" target="_blank" aria-label="Разработано в HTML Academy">
           Разработано
           <svg width="27px" height="34px" focusable="false">
-            <use xlink:href="img/sprite.svg#logo-htmla"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -265,9 +272,8 @@
     </section>
   </div>
 
-  <script src="/js/svg4everybody.legacy.min.js"></script>
   <script src="/js/picturefill.min.js"></script>
-  <script src="/js/mishka.js"></script>
+  <script src="/js/mishka.min.js"></script>
 
 </body>
 </html>
