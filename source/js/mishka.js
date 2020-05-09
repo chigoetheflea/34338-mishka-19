@@ -1,5 +1,3 @@
-svg4everybody();
-
 /* Карта */
 
 var map = document.querySelector("#js-map");
@@ -32,7 +30,6 @@ if(map) {
     );
     myMap.behaviors.disable("scrollZoom");
     myMap.geoObjects.add(marker);
-
   });
 
 }
