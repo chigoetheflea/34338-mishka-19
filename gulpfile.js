@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 
 var jsmin = require("gulp-jsmin");
+var htmlmin = require("gulp-htmlmin");
 
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -81,6 +82,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 });
 
