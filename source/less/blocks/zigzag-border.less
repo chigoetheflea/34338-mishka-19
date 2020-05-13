@@ -4,14 +4,14 @@
 
     &::after {
       position: absolute;
-      bottom: -12px;
+      bottom: -6px;
       left: 0;
 
       width: 100%;
       height: 23px;
 
       background: url("../img/bg-zigzag-fill.svg") 50% 0 repeat-x;
-      background-size: auto 100%;
+      background-size: auto 99%;
 
       pointer-events: none;
       content: "";
@@ -22,8 +22,21 @@
 @media (min-width: @desktop-width) {
   .zigzag-border {
     &::after {
-      bottom: -19px;
-      height: 34px;
+      background-size: auto 100%;
+    }
+
+    &--home {
+      &::after {
+        bottom: -14px;
+        height: 37px;
+      }
+    }
+
+    &--inner {
+      &::after {
+        bottom: -18px;
+        height: 34px;
+      }
     }
   }
 }

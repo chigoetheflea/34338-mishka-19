@@ -1,5 +1,6 @@
 .contacts__title {
   margin-top: 4px;
+  margin-left: -2px;
 }
 
 .contacts__addresses {
@@ -51,12 +52,13 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: @green-1;
   }
 
   &:active {
-    color: @gray-4;
+    opacity: 0.3;
   }
 }
 
@@ -80,7 +82,7 @@
 }
 
 .contacts__button {
-  margin-top: 41px;
+  margin-top: 42px;
 }
 
 @media (min-width: @tablet-width) {
@@ -124,6 +126,12 @@
   .contacts__button {
     margin-top: 55px;
   }
+
+  .contacts__email {
+    &::after {
+      bottom: -5px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -138,6 +146,7 @@
 
   .contacts__title {
     margin-top: 4px;
+    letter-spacing: -0.3px;
 
     &::before {
       right: auto;

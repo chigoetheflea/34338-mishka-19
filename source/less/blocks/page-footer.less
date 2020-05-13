@@ -18,8 +18,12 @@
   display: none;
 }
 
+.page-footer__social {
+  padding-right: 3px;
+}
+
 .page-footer__copyright {
-  margin-top: 17px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 19px;
   text-align: center;
@@ -75,12 +79,13 @@
   }
 
   .page-footer__logo {
-    .transition();
+    .transition(svg);
     display: block;
 
     &[href]:hover,
-    &[href]:focus {
-      opacity: 0.6;
+    &[href]:focus,
+    &[href]:active {
+      fill: @green-1;
     }
 
     &[href]:active {
