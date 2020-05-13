@@ -4,7 +4,7 @@
   max-width: 1050px;
 
   background: url("../img/bg-zigzag-line.svg") 50% 50% repeat-x;
-  background-size: auto 100%;
+  background-size: auto 6px;
 
   &--in-wrapper {
     margin: 0 -30px;
@@ -13,7 +13,8 @@
 
 @media (min-width: @tablet-width) {
   .zigzag {
-    height: 15px;
+    height: 17px;
+    background-size: 100% 17px;
 
     &--in-wrapper {
       margin: 0 -50px;
@@ -24,6 +25,7 @@
 @media (min-width: @desktop-width) {
   .zigzag {
     height: 23px;
+    background-size: 100% 23px;
 
     &--in-wrapper {
       margin: 0;

@@ -22,6 +22,7 @@
 
       &::before,
       &::after {
+        left: 0;
         width: 100%;
         transform: rotate(0deg);
       }
@@ -36,7 +37,6 @@
     }
   }
 }
-
 
 .main-nav__control {
   position: absolute;
@@ -54,6 +54,7 @@
 }
 
 .main-nav__burger {
+  display: block;
   position: relative;
   height: 100%;
 
@@ -62,10 +63,10 @@
     .transition();
 
     position: absolute;
-    left: 0;
+    left: -4px;
     top: 50%;
 
-    width: 100%;
+    width: 28px;
 
     height: 2px;
     background-color: @black;
@@ -107,11 +108,11 @@
 
   &[href]:hover,
   &[href]:focus {
-    color: fade(@black, 40%);
+    color: fade(@black, 60%);
   }
 
   &[href]:active {
-    color: fade(@black, 70%);
+    color: fade(@black, 30%);
   }
 
   &--icon {
@@ -260,6 +261,12 @@
     max-width: @desktop-width;
     margin: 0 auto;
     padding: 0 50px;
+  }
+
+  .main-nav__link {
+    &--icon {
+      padding-left: 84px;
+    }
   }
 
   .main-nav__list {

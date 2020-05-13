@@ -11,10 +11,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <title>Мишка - магазин милых штучек ручной работы | Вязание на заказ</title>
 </head>
-<body>
+<body class="no-js">
 
   <div style="display:none;">
-    <include src="source/img/sprite.svg"></include>
+    <include src="build/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
@@ -27,7 +27,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__control" type="button">
-        <div class="main-nav__burger"></div>
+        <span class="main-nav__burger"></span>
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -74,7 +74,7 @@
 
   <main class="inner-page">
 
-    <div class="zigzag-border  inner-page__title-wrapper">
+    <div class="zigzag-border  inner-page__title-wrapper  zigzag-border--inner">
       <h1 class="content-wrapper  title  inner-page__title  title--large  title--center">Вязание на заказ</h1>
     </div>
 
@@ -171,7 +171,7 @@
             <div class="form__column  form__column--padding-right">
               <div class="form__textgroup">
                 <input type="tel" name="order-phone" id="order-phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="input  form__input  input--icon" required>
-                <svg class="form__icon" width="25px" height="24px" focusable="false" aria-hidden="true">
+                <svg class="form__icon  form__icon--phone" width="25px" height="24px" focusable="false" aria-hidden="true">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </div>

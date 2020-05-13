@@ -1,4 +1,20 @@
+.production {
+  &:hover,
+  &:focus {
+    .production__wrapper {
+      box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &:active {
+    .production__wrapper {
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
 .production__wrapper {
+  .transition();
   display: flex;
   flex-direction: column;
   position: relative;
@@ -103,7 +119,7 @@
   }
 
   .production__button {
-    margin-top: 35px;
+    margin-top: 34px;
   }
 
   .production__text {
@@ -129,8 +145,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 65%;
     height: 100%;
+    max-height: 458px;
     margin: 0;
   }
 
@@ -159,7 +177,7 @@
 
     svg {
       margin-right: 0;
-      margin-bottom: 27px;
+      margin-bottom: 29px;
     }
 
     br {

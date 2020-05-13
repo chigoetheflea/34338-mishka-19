@@ -1,8 +1,12 @@
 .categories__link {
-  position: relative;
+  .transition();
 
-  display: block;
-  padding: 27px 33px 32px 29px;
+  position: relative;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  padding: 27px 100px 32px 29px;
 
   color: #ffffff;
   font-size: 19px;
@@ -71,6 +75,7 @@
   .categories__link {
     flex-basis: 50%;
     padding-left: 36px;
+    padding-bottom: 37px;
     font-size: 20px;
     line-height: 30px;
 
@@ -78,6 +83,11 @@
       &::after {
         right: 34px;
       }
+    }
+
+    &:hover,
+    &:focus {
+      top: -5px;
     }
   }
 }

@@ -3,11 +3,26 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    .product__info {
+      box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &:active {
+    .product__info {
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
+.product__thumb,
+.product__info {
+  position: relative;
+}
+
 .product__thumb {
+  z-index: 2;
+
   img {
     display: block;
     width: 100%;
@@ -16,6 +31,8 @@
 }
 
 .product__info {
+  .transition();
+  z-index: 1;
   padding: 25px 26px 24px 26px;
   border: 1px solid @gray-1;
 }
@@ -134,7 +151,7 @@
 
   .product__info {
     flex-grow: 1;
-    padding: 24px 26px 25px 26px;
+    padding: 23px 26px 25px 26px;
   }
 
   .product__dimentions {

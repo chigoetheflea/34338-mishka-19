@@ -11,10 +11,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <title>Мишка - магазин милых штучек ручной работы | Каталог товаров</title>
 </head>
-<body>
+<body class="no-js">
 
   <div style="display:none;">
-    <include src="source/img/sprite.svg"></include>
+    <include src="build/img/sprite.svg"></include>
   </div>
 
   <header class="page-header">
@@ -27,7 +27,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__control" type="button">
-        <div class="main-nav__burger"></div>
+        <span class="main-nav__burger"></span>
         <span class="visually-hidden">Меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -74,7 +74,7 @@
 
   <main class="inner-page">
 
-    <div class="zigzag-border  inner-page__title-wrapper">
+    <div class="zigzag-border  inner-page__title-wrapper  zigzag-border--inner">
       <h1 class="content-wrapper  title  inner-page__title  title--large  title--center">Каталог товаров</h1>
     </div>
 
@@ -102,7 +102,7 @@
             <p class="product__price">
               1 200 руб.
               <a href="products/banny.html" class="product__buy  js-modal-buy" aria-label="Купить зайчика-попрыгайчика">
-                <svg width="20.294px" height="18.849px" role="button">
+                <svg width="20.294px" height="18.849px" role="img">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -130,7 +130,7 @@
             <p class="product__price">
               690 руб.
               <a href="products/basket.html" class="product__buy  js-modal-buy" aria-label="Купить корзинку для белья">
-                <svg width="20.294px" height="18.849px" role="button">
+                <svg width="20.294px" height="18.849px" role="img">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -158,7 +158,7 @@
             <p class="product__price">
               1 500 руб.
               <a href="products/big-basket.html" class="product__buy  js-modal-buy" aria-label="Купить большую корзинку для игрушек">
-                <svg width="20.294px" height="18.849px" role="button">
+                <svg width="20.294px" height="18.849px" role="img">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
@@ -174,7 +174,7 @@
             <svg width="32px" height="22px" aria-hidden="true" focusable="false">
               <use xlink:href="#icon-video"></use>
             </svg>
-            Процесс <br>производства
+            Процесс&nbsp;<br>производства
           </h2>
           <div class="production__video">
             <video width="260" height="150">
