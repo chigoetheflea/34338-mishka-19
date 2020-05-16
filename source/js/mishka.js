@@ -23,7 +23,7 @@ if(map) {
       },
       {
         iconLayout: "default#image",
-        iconImageHref: "http://fsfamily.ru/imgs/map-marker.svg",
+        iconImageHref: "img/map-marker.svg",
         iconImageSize: [50, 77],
         iconImageOffset: [-25, -77]
       }
